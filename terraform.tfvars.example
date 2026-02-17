@@ -1,0 +1,19 @@
+# Example Terraform Variables File
+# Copy this file to terraform.tfvars and customize as needed
+
+location    = "germanywestcentral"
+environment = "test"
+
+tags = {
+  Environment = "Test"
+  ManagedBy   = "Terraform"
+  Purpose     = "LandingZone"
+  Framework   = "AzureWellArchitected"
+  Owner       = "YourName"
+  CostCenter  = "IT"
+}
+
+# Optional: Customize address spaces
+# hub_vnet_address_space             = ["10.0.0.0/16"]
+# spoke_workload_vnet_address_space  = ["10.1.0.0/16"]
+# spoke_services_vnet_address_space  = ["10.2.0.0/16"]
